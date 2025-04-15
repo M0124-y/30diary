@@ -1,0 +1,40 @@
+title: "人生日記"
+description: "ご飯、日常、仕事、悩み、マナーなど、30代女性のリアルを綴るブログ。"
+url: "" # GitHub Pages用に後で追加
+baseurl: ""
+theme: minimal-mistakes-jekyll
+locale: "ja"
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+author:
+  name   : "あなたの名前"
+  avatar : "/assets/images/avatar.png"
+  bio    : "30代女性の日常をふんわり記録していきます。"
+  location: "Japan"
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
+permalink: /:categories/:title/
+paginate: 5
+
+category_archive:
+  type: liquid
+  path: /categories/
