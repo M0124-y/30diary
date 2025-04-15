@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30代女性の人生日記</title>
+  <style>
+    :root {
+      --main-color: #ffa07a;
+      --accent-color: #fff0e0;
+      --text-color: #444;
+      --bg-color: #fffdf9;
+      --shadow-color: rgba(0, 0, 0, 0.05);
+    }
+    body {
+      margin: 0;
+      font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(90deg, #ffb347, #ffa07a);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 4px solid #fff0e0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: var(--accent-color);
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #d95b43;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff7f50;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    article {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px var(--shadow-color);
+      margin-bottom: 2rem;
+      transition: transform 0.2s ease;
+    }
+    article:hover {
+      transform: translateY(-5px);
+    }
+    h2 {
+      color: var(--main-color);
+      margin-top: 0;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      background-color: var(--accent-color);
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>30代女性の人生日記</h1>
+    <p>日々の出来事や感じたことを、ほっこり漫画と一緒に。</p>
+  </header>
+  <nav>
+    <a href="#">ホーム</a>
+    <a href="#">プロフィール</a>
+    <a href="#">日記</a>
+    <a href="#">お問い合わせ</a>
+  </nav>
+  <main>
+    <article>
+      <h2>🌸 春の始まりと小さな幸せ</h2>
+      <p>今日は桜が咲き始めて、とても癒されました。</p>
+      <img src="manga_sample.jpg" alt="今日の漫画" />
+    </article>
+    <article>
+      <h2>☕ カフェで一人時間</h2>
+      <p>お気に入りのカフェで、ほっと一息。読書とカフェラテが最高の組み合わせ！</p>
+    </article>
+  </main>
+  <footer>
+    &copy; 2025 30代女性の人生日記. All rights reserved.
+  </footer>
+</body>
+</html>
